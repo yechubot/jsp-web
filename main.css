@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+h2 {
+    display: block;
+    height: 300px;
+}
+
+.login-button {
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+}
+
+.main-img {
+    display: block;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.header-list {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffe0b2;
+}
+
+.header-list li {
+    display: inline-block;
+    padding: 0 20px;
+    color: #bcaaa4;
+    cursor: pointer;
+}
+
+.header-list li:hover {
+    color: #795548;
+}
+
+#login {
+    align-items: right;
+    padding: 5px;
+}
+
+.book {
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.call, .online {
+    background-color: #fff3e0;
+    border: none;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px 40px;
+    margin: 20px;
+    text-align: center;
+}
+
+#inner {
+    font-size: 15px;
+    color: gray;
+}
+#inner2{
+    color: #795548;
+    font-size: 18px;
+}
+
+.btn_book {
+    margin-top: 25px;
+    padding: 10px;
+    border: none;
+    background-color: #d7ccc8;
+    color:#a1887f;
+    font-weight: bold;
+}
+.btn_book:hover{
+    cursor: pointer;
+    color: #795548;
+    font-weight: 800;
+}
+
+footer {
+    background-color: #eeeeee;
+    padding: 10px;
+    height: 100px;
+}
+
+.ny {
+    width: 150px;
+    float: right;
+    padding-right: 10px;
+    font-size: 13px;
+}
