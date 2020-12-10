@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Nanum Myeongjo', serif,verdana;
 }
 
 h2 {
@@ -11,13 +11,13 @@ h2 {
     height: 300px;
 }
 
-.login-button {
+.button {
     display: flex;
     justify-content: right;
     align-items: baseline;
 }
 
-.main-img {
+.main-img{
     display: block;
     padding-top: 50px;
     margin-left: auto;
@@ -74,6 +74,7 @@ h2 {
 }
 
 .btn_book {
+	outline:none;
     margin-top: 25px;
     padding: 10px;
     border: none;
@@ -100,3 +101,49 @@ footer {
     font-size: 13px;
 }
 
+/*book.jsp */
+
+.booktbl-div{
+	height:600px;
+	justify-content: center;
+	padding-top:80px;
+    display: flex; 
+    background-image:url("img/bookingwall2.jpg");
+    background-size:1000px auto;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    background-repeat: no-repeat;
+}
+
+.booktbl{
+	justify-content: center;
+	height:300px;
+	display: flex; 
+	padding-top:30px;
+	width:500px;
+    background-color: rgba(214, 214, 214, 0.32);
+}
+
+.booktbl td, tr{
+	padding:10px;
+	font-size:20px;
+}
+input{
+	height:30px;
+	border:none;
+	outline:none;
+}
+
+.book-done{
+	padding: 10px;
+    border: 1px solid #dedede;
+    background-color: #dedede;
+    color:#a1887f;
+    font-size:20px;
+}
+.book-done:hover{
+	cursor: pointer;
+    color: #795548;
+    font-weight: 800;
+}
