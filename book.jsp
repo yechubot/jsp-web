@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+ 
+<html>
 
 <head>
     <link rel="stylesheet" type="text/css" href="main.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
-    <title>예약하기</title>
+    <title>예약하기</title>  
 </head>
-
 <body>
     <header>
         <nav class="header-list">
@@ -17,16 +19,16 @@
             </ul>
         </nav>
     </header>
-
-    <div class="book-main">
-        <table class="book">
-            <tr>
+     <form name ="bookingForm" method ="post" action="">
+     <div class = "booktbl-div">
+        <table class="booktbl">
+         <tr>
                 <td>이름: </td>
                 <td><input type="text" name="name"></td>
             </tr>
             <tr>
                 <td>전화번호: </td>
-                <td><input type="number" name="phone"></td>
+                <td><input type="text" name="phone"></td>
             </tr>
             <tr>
                 <td>날짜 :</td>
@@ -51,10 +53,14 @@
                     </select>일
                 </td>
             </tr>
+            <tr>
+            	<td colspan="2" align ="center">
+            	<button type="submit" onclick="check()" class = "book-done">예약완료</button>
+            </tr>
         </table>
-    </div>
-
-
+        </div>
+         </form>
+  
 </body>
 <footer>
     <div class="ny">Brooklyn, NY <br>
