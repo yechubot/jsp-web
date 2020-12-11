@@ -23,11 +23,14 @@ public class BookingMgr {
 		boolean flag = false;
 		try {
 			connection = pool.getConnection();
-			sql = "insert bookingtbl(name,phone,date) + values(?,?,?)";
+			sql = "insert bookingtbl(name,phone,bookedDate) values(?,?,?)";
 			statement = connection.prepareStatement(sql);
 			statement.setString(1, bean.getName());
 			statement.setString(2, bean.getPhone());
 			statement.setString(3, bean.getDate());
+			
+			if(statement.executeUpdate()==1) flag = true;
+	
 		}catch(Exception e) {
 			e.printStackTrace();
 			
@@ -36,6 +39,7 @@ public class BookingMgr {
 		}
 		return flag;
 	}
+	//예약확인 
 
 }
 

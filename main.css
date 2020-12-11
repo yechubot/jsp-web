@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Nanum Myeongjo', serif,verdana;
+     font-family: 'Noto Serif KR', serif;
 }
 
 h2 {
@@ -54,7 +54,7 @@ h2 {
     flex-wrap: nowrap;
 }
 
-.call, .online {
+.call, .online, .online-check {
     background-color: #fff3e0;
     border: none;
     font-size: 20px;
@@ -73,7 +73,7 @@ h2 {
     font-size: 18px;
 }
 
-.btn_book {
+.btn_book, .btn_check {
 	outline:none;
     margin-top: 25px;
     padding: 10px;
@@ -82,7 +82,7 @@ h2 {
     color:#a1887f;
     font-weight: bold;
 }
-.btn_book:hover{
+.btn_book:hover, .btn_check:hover{
     cursor: pointer;
     color: #795548;
     font-weight: 800;
