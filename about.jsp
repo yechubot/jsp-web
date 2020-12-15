@@ -18,7 +18,7 @@
 			</ul>
 		</nav>
 	</header>
-	<div class="story-dv">
+	<div class="story-div">
 		<h2 class="title">OUR STORY</h2>
 		<p>When “Carl Luger’s Café, Billiards and Bowling Alley” was opened in 1887, the restaurant quickly became a neighborhood favorite in predominantly German Williamsburg. Peter Luger owned the establishment, while his nephew, Carl, manned the kitchen.</p>
 		<br>
