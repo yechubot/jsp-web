@@ -14,9 +14,9 @@
 	<header>
 		<nav class="header-list">
 			<ul>
-				<li>레스토랑 소개</li>
+				<li onclick="location.href='about.jsp'">레스토랑 소개</li>
 				<li><img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" /></li>
-				<li>갤러리</li>
+				<li onclick="location.href='gallery.jsp'">갤러리</li>
 			</ul>
 		</nav>
 	</header>
@@ -31,20 +31,19 @@
 		</div>
 		<div class="online">
 			온라인 예약<br>
-			<button class="btn_book"  type="submit" onclick="location.href='book.jsp'">예약하기</button>
+			<button class="btn_book" type="submit" onclick="location.href='book.jsp'">예약하기</button>
 		</div>
 		<div class="online-check">
 			예약확인<br>
-				<button class="btn_check"  type="submit" onclick="location.href='book_check.jsp'">예약확인</button>
-		
+			<button class="btn_check" type="submit" onclick="location.href='book_check.jsp'">예약확인</button>
+
 		</div>
 	</div>
+
+	<footer>
+		<div class="ny">
+			Brooklyn, NY <br> Peter Luger, Inc.<br> 178 Broadway<br> Brooklyn, N.Y. 11211<br> Reservations:<br> 718-387-7400
+		</div>
+	</footer>
 </body>
-<footer>
-	<div class="ny">
-		Brooklyn, NY <br> Peter Luger, Inc.<br> 178 Broadway<br> Brooklyn, N.Y. 11211<br> Reservations:<br> 718-387-7400
-	</div>
-
-</footer>
-
 </html>

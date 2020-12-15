@@ -6,11 +6,6 @@
      font-family: 'Noto Serif KR', serif;
 }
 
-h2 {
-    display: block;
-    height: 300px;
-}
-
 .button {
     display: flex;
     justify-content: right;
@@ -90,14 +85,15 @@ h2 {
 
 footer {
     background-color: #eeeeee;
-    padding: 10px;
     height: 100px;
+    padding:15px;
 }
 
 .ny {
     width: 150px;
     float: right;
-    padding-right: 10px;
+    padding-right: 5px;
+    
     font-size: 13px;
 }
 
@@ -145,5 +141,30 @@ input{
 .book-done:hover{
 	cursor: pointer;
     color: #795548;
-    font-weight: 800;
+    font-weight: 600;
 }
+/*book_check*/
+.bookctbl-div{
+	height:600px;
+	justify-content: center;
+	padding-top:80px;
+    display: flex; 
+    background-image:url("img/drink.jpg");
+    background-size:1000px auto;
+    width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    background-repeat: no-repeat;
+}
+/*about */
+
+.title{
+	margin-top: 50px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.story-div{
+	
+}
+
