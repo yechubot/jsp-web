@@ -25,6 +25,7 @@
 		<p>Luger’s was not the only thing doing in the small Brooklyn neighborhood. With the opening of the Williamsburg Bridge in December of 1903, Manhattan became far more accessible and a new crowd of businessmen crossed the East River. It was not until 1920 that Sol Forman, a seventeen year old who had dropped out of high school to work full-time lighting street lamps, established Forman Family with his siblings just across the street from Carl Luger’s.</p>
 		<br>
 		<p>Forman Family made everything from silverware to trays to stamped-metal giftware. The manufacturing site, at 185 Broadway, served as a headquarters for sales, and what better place for Sol Forman to take prospective clients than the famed restaurant just across the street? Sol was known to eat two steaks a day – three when the trade shows came through.</p>
+		<img src="img/about.jpg" alt="about image" class ="abouti" />
 	</div>
 
 

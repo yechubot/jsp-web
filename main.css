@@ -1,175 +1,219 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-     font-family: 'Noto Serif KR', serif;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Noto Serif KR', serif;
 }
 
 .button {
-    display: flex;
-    justify-content: right;
-    align-items: baseline;
+	display: flex;
+	justify-content: right;
+	align-items: baseline;
 }
 
-.main-img{
-    display: block;
-    padding-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.main-img {
+	display: block;
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
 .header-list {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    background-color: #ffe0b2;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	background-color: #ffe0b2;
 }
 
 .header-list li {
-    display: inline-block;
-    padding: 0 20px;
-    color: #bcaaa4;
-    cursor: pointer;
+	display: inline-block;
+	padding: 0 20px;
+	color: #bcaaa4;
+	cursor: pointer;
 }
 
 .header-list li:hover {
-    color: #795548;
+	color: #795548;
 }
 
 #login {
-    align-items: right;
-    padding: 5px;
+	align-items: right;
+	padding: 5px;
 }
 
 .book {
-    justify-content: center;
-    display: flex;
-    flex-wrap: nowrap;
+	justify-content: center;
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .call, .online, .online-check {
-    background-color: #fff3e0;
-    border: none;
-    font-size: 20px;
-    font-weight: 800;
-    padding: 15px 40px;
-    margin: 20px;
-    text-align: center;
+	background-color: #fff3e0;
+	border: none;
+	font-size: 20px;
+	font-weight: 800;
+	padding: 15px 40px;
+	margin: 20px;
+	text-align: center;
 }
 
 #inner {
-    font-size: 15px;
-    color: gray;
+	font-size: 15px;
+	color: gray;
 }
-#inner2{
-    color: #795548;
-    font-size: 18px;
+
+#inner2 {
+	color: #795548;
+	font-size: 18px;
 }
 
 .btn_book, .btn_check {
-	outline:none;
-    margin-top: 25px;
-    padding: 10px;
-    border: none;
-    background-color: #d7ccc8;
-    color:#a1887f;
-    font-weight: bold;
+	outline: none;
+	margin-top: 25px;
+	padding: 10px;
+	border: none;
+	background-color: #d7ccc8;
+	color: #a1887f;
+	font-weight: bold;
 }
-.btn_book:hover, .btn_check:hover{
-    cursor: pointer;
-    color: #795548;
-    font-weight: 800;
+
+.btn_book:hover, .btn_check:hover {
+	cursor: pointer;
+	color: #795548;
+	font-weight: 800;
 }
 
 footer {
-    background-color: #eeeeee;
-    height: 100px;
-    padding:15px;
+	background-color: #eeeeee;
+	height: 100px;
+	padding: 15px;
 }
 
 .ny {
-    width: 150px;
-    float: right;
-    padding-right: 5px;
-    
-    font-size: 13px;
+	width: 150px;
+	float: right;
+	padding-right: 5px;
+	font-size: 13px;
 }
 
 /*book.jsp */
-
-.booktbl-div{
-	height:600px;
+.booktbl-div {
+	height: 600px;
 	justify-content: center;
-	padding-top:80px;
-    display: flex; 
-    background-image:url("img/bookingwall2.jpg");
-    background-size:1000px auto;
-    width:1000px;
-    margin-left:auto;
-    margin-right:auto;
-    background-repeat: no-repeat;
+	padding-top: 80px;
+	display: flex;
+	background-image: url("img/bookingwall2.jpg");
+	background-size: 1000px auto;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
 }
 
-.booktbl{
+.booktbl {
 	justify-content: center;
-	height:300px;
-	display: flex; 
-	padding-top:30px;
-	width:500px;
-    background-color: rgba(214, 214, 214, 0.32);
+	height: 300px;
+	display: flex;
+	padding-top: 30px;
+	width: 500px;
+	background-color: rgba(214, 214, 214, 0.32);
 }
 
-.booktbl td, tr{
-	padding:10px;
-	font-size:20px;
-}
-input{
-	height:30px;
-	border:none;
-	outline:none;
-}
-
-.book-done{
+.booktbl td, tr {
 	padding: 10px;
-    border: 1px solid #dedede;
-    background-color: #dedede;
-    color:#a1887f;
-    font-size:20px;
+	font-size: 20px;
 }
-.book-done:hover{
+
+input {
+	height: 30px;
+	border: none;
+	outline: none;
+}
+
+.book-done {
+	padding: 10px;
+	border: 1px solid #dedede;
+	background-color: #dedede;
+	color: #a1887f;
+	font-size: 20px;
+}
+
+.book-done:hover {
 	cursor: pointer;
-    color: #795548;
-    font-weight: 600;
+	color: #795548;
+	font-weight: 600;
 }
 /*book_check*/
-.bookctbl-div{
-	height:600px;
+.bookctbl-div {
+	height: 600px;
 	justify-content: center;
-	padding-top:80px;
-    display: flex; 
-    background-image:url("img/drink.jpg");
-    background-size:1000px auto;
-    width:1000px;
-    margin-left:auto;
-    margin-right:auto;
-    background-repeat: no-repeat;
+	padding-top: 80px;
+	display: flex;
+	background-image: url("img/drink.jpg");
+	background-size: 1000px auto;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	background-repeat: no-repeat;
 }
 /*about */
-
-.title{
+.title {
 	margin-top: 50px;
-    text-align: center;
-    margin-bottom:50px;
-    color:#795548;
-    font-weight: 800;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #795548;
+	font-weight: 800;
 }
-.story-div{
-    height:600px;
-    padding:10px;
-    margin:40px;
-    background-color: #f7e8e2;
+
+.story-div {
+	height: 900px;
+	padding: 10px;
+	margin: 40px;
+	background-color: #f1f8e9;
+}
+
+.abouti {
+	width: 50%;
+	padding-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.imgs-div {
+	padding: 30px;
+	background-color: #fff3e0;
+	margin: 40px 80px;
+}
+
+.imgs-div>img {
+	width: 100%;
+	text-align: center;
+	margin: 20px auto;
+	position: relative;
+}
+
+.imgs-div>img:hover {
+	cursor: pointer;
 	
 }
 
+.img-txt {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	transition: .5s ease;
+}
+
+.txt {
+	font-size: 20px;
+
+}

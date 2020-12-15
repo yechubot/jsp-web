@@ -5,12 +5,13 @@
     <jsp:setProperty property ="*" name ="bean"/>
    
     <%
+    
     String name =request.getParameter("name");
     String phone = request.getParameter("phone");
     String date = 
-    		request.getParameter("year")+"-"+
-    		request.getParameter("month")+"-"+
-    		request.getParameter("day");
+    		request.getParameter("year")+"년"+" "+
+    		request.getParameter("month")+"월"+" "+
+    		request.getParameter("day")+"일";
     bean.setDate(date);
     bean.setName(name);
     bean.setPhone(phone);

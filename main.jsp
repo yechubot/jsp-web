@@ -22,7 +22,7 @@
 	</header>
 
 	<div class="main">
-		<img src="img/steak.jpg" alt="" srcset="" width="600" class="main-img" />
+		<img src="img/steak.jpg" alt="" srcset=""class="main-img" />
 	</div>
 	<div class="book">
 		<div class="call">
