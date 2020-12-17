@@ -19,17 +19,20 @@
             </ul>
         </nav>
     </header>
-     <form name ="bookingForm" method ="post" action="bookDate_check.jsp">
+     <form name ="bookingForm" method ="post" action="bookDate_proc.jsp">
      <div class = "bookctbl-div">
         <table class="booktbl">
         
          <tr>
-                <td>예약한 이름: </td>
-                <td><input type="text" name="name" required></td>
+                <td>예약하신 성함: </td>
+                <td><input type="text" name="name" required placeholder="예약하신 성함을 입력하세요."></td>
             </tr>
             <tr>
-                <td>예약한 전화번호: </td>
-                <td><input type="text" name="phone" required ></td>
+                <td>예약하신 전화번호: </td>
+                <td><input type="text" name="phone" required 
+                placeholder="010-0000-0000"
+                pattern ="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}"
+                maxlength="14"></td>
             </tr>
             <tr>
             	<td colspan="2" align ="center">

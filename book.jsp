@@ -25,11 +25,14 @@
         
          <tr>
                 <td>이름: </td>
-                <td><input type="text" name="name" required></td>
+                <td><input type="text" name="name" required placeholder="귀하의 성함을 입력하세요. "></td>
             </tr>
             <tr>
                 <td>전화번호: </td>
-                <td><input type="text" name="phone" required ></td>
+                <td><input type="text" name="phone" required 
+                placeholder="010-0000-0000"
+                pattern ="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}"
+                maxlength="14"></td>
             </tr>
             <tr>
                 <td>날짜 :</td>

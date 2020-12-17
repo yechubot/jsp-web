@@ -1,19 +1,9 @@
 <%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<jsp:useBean id="mgr" class="steakhouse.BookingMgr" />
-<%
-	String name = request.getParameter("name");
-	String phone = request.getParameter("phone");
 
-if (!mgr.isBooked(name, phone)) {
-%>
-<script>
-	alert("예약된 내역이 없습니다. 예약페이지로 이동합니다.");
-	location.href = "book.jsp";
-</script>
 <%
-	}
+	String name = (String) session.getAttribute("nKey");
+	String date = (String) session.getAttribute("dKey");
 %>
-
 
 <html>
 <head>
@@ -42,14 +32,17 @@ if (!mgr.isBooked(name, phone)) {
 			</tr>
 
 			<tr>
-				<td> 입니다.</td>
+				<td><%=date%>입니다.</td>
 
+			</tr>
+			<tr>
+				<td><button class="btn_check" type="submit" onclick="location.href='main.jsp'">홈으로 돌아가기</button></td>
 			</tr>
 		</table>
 	</div>
 
 
-<footer>
+	<footer>
 		<div class="ny">
 			Brooklyn, NY <br> Peter Luger, Inc.<br> 178 Broadway<br> Brooklyn, N.Y. 11211<br> Reservations:<br> 718-387-7400
 		</div>

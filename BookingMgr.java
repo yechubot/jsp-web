@@ -30,8 +30,8 @@ public class BookingMgr {
 			statement.setString(2, bean.getPhone());
 			statement.setString(3, bean.getDate());
 
-			if (statement.executeUpdate() == 1)
-				flag = true;
+			if (statement.executeUpdate() == 1) flag = true;
+				
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -41,28 +41,49 @@ public class BookingMgr {
 		}
 		return flag;
 	}
-
-	// 예약확인
-	public boolean isBooked(String name, String phone) {
+	//예약확인
+	
+	public String getBooking(String name, String phone) {
 		Connection connection = null;
 		PreparedStatement statement = null;
 		ResultSet rs = null;
-		boolean flag = false;
-
+		String date = "";
 		try {
 			connection = pool.getConnection();
-			String sql = "select count(*) from bookingtbl where name =? and phone = ?";
+			String sql = "select count(*),bookedDate from bookingtbl where name =? and phone = ?";
 			statement = connection.prepareStatement(sql);
 			statement.setString(1, name);
 			statement.setString(2, phone);
 			rs =statement.executeQuery();
+			
 			if(rs.next()&&rs.getInt(1)>0) {
-				flag = true;
+				 date = rs.getString(2);
+				 
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			pool.freeConnection(connection, statement, rs);
+		}
+		return date;
+	}
+	
+	// 번호 중복확인 
+	public boolean checkPhone(String phone) {
+		Connection connection = null;
+		PreparedStatement statement = null;
+		boolean flag = false;
+		try {
+			connection = pool.getConnection();
+			String sql = "select phone from bookingtbl where phone =? ";
+			statement = connection.prepareStatement(sql);
+			statement.setString(1, phone);
+			flag = statement.executeQuery().next();//중복 => true 
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			pool.freeConnection(connection, statement);
 		}
 		return flag;
 	}
