@@ -11,13 +11,16 @@
 </head>
 <body>
     <header>
-        <nav class="header-list">
-            <ul>
-                <li onclick="location.href='about.jsp'">레스토랑 소개</li>
-				<li><img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" /></li>
+        <div class="logo">
+			<img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" />
+		</div>
+		<nav class="header-list">
+			<ul>
+				<li onclick="location.href='about.jsp'">레스토랑 소개</li>
 				<li onclick="location.href='gallery.jsp'">갤러리</li>
-            </ul>
-        </nav>
+				<li onclick="location.href='location.jsp'">찾아오시는 길 </li>
+			</ul>
+		</nav>
     </header>
      <form name ="bookingForm" method ="post" action="bookDate_proc.jsp">
      <div class = "bookctbl-div">
@@ -36,7 +39,7 @@
             </tr>
             <tr>
             	<td colspan="2" align ="center">
-            	<button type="submit" class = "book-done">예약날짜 확인하기</button>
+            	<button type="submit" class = "book-done">예약일 확인하기</button>
             </tr>
         </table>
         </div>

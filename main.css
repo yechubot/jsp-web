@@ -11,6 +11,34 @@
 	justify-content: right;
 	align-items: baseline;
 }
+.go{
+	padding:10px;
+	margin:5px;
+	background-color: rgba(214, 214, 214, 0.2);
+	border: none;
+	cursor:pointer;
+	color:#795548;
+	font-size:15px;
+	outline: none;
+}
+.go:hover{
+	color:white;
+}
+.btn-div{
+	background-color: #ffe0b2;
+	text-align:center;
+}
+
+.logo {
+	display: block;
+	background-color: #ffe0b2;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.logo>img {
+	cursor: pointer;
+}
 
 .main-img {
 	display: block;
@@ -18,20 +46,22 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	cursor: pointer;
 }
 
 .header-list {
-	padding: 10px;
-	display: flex;
-	justify-content: center;
-	background-color: #ffe0b2;
+	text-align: center;
+	height: 40px;
+	background-color: #fff8e1;
 }
 
 .header-list li {
 	display: inline-block;
-	padding: 0 20px;
+	margin: 0 60px;
+	line-height: 40px;
 	color: #bcaaa4;
 	cursor: pointer;
+	font-size: 20px;
 }
 
 .header-list li:hover {
@@ -99,6 +129,13 @@ footer {
 }
 
 /*book.jsp */
+.note{
+	width:330px;
+	padding:10px;
+	text-align:center;
+	margin:40px auto 10px auto;
+	border:2px dashed #eeeeee;
+}
 .booktbl-div {
 	height: 600px;
 	justify-content: center;
@@ -147,6 +184,7 @@ input {
 }
 /*book_check*/
 .bookctbl-div {
+	margin-top:40px;
 	height: 600px;
 	justify-content: center;
 	padding-top: 80px;
@@ -160,6 +198,7 @@ input {
 }
 /*about */
 .title {
+	
 	margin-top: 50px;
 	text-align: center;
 	margin-bottom: 50px;
@@ -168,18 +207,16 @@ input {
 }
 
 .story-div {
-	height: 900px;
-	padding: 10px;
+	height: auto;
+	padding: 10px 60px;
 	margin: 40px;
 	background-color: #f1f8e9;
 }
 
 .abouti {
-	width: 50%;
-	padding-top: 20px;
+	width: 40%;
+	margin:40px auto;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	display: block;
 }
 
@@ -198,22 +235,61 @@ input {
 
 .imgs-div>img:hover {
 	cursor: pointer;
+}
+/*location */
+.location-div {
 	
 }
 
-.img-txt {
-	position: relative;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 100%;
-	opacity: 1;
-	transition: .5s ease;
+.loc-title {
+	margin-top:40px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 800;
+	color: #795548;
 }
 
-.txt {
-	font-size: 20px;
+.loc-title>span,
+.loc-time>span {
+	border-bottom: 2px solid #795548;
+}
 
+.addr {
+	margin: 40px auto;
+	padding: 10px;
+	width: 350px;
+	height: 100px;
+	text-align: center;
+	background-color: rgba(214, 214, 214, 0.32);
+	font-size: 19px;
+}
+.line{
+	height: 20px;
+	border-bottom: 3px dashed rgba(214, 214, 214, 0.32);
+	margin: auto 20px; 
+
+	}
+	
+.bottom{
+	margin:20px;
+}
+
+.loc-table {
+	margin: 40px auto;
+	width: 800px;
+	height: 200px;
+	background-color: rgba(214, 214, 214, 0.32);
+	font-size: 20px;
+}
+
+.loc-time {
+	text-align: center;
+	font-size: 25px;
+	font-weight: 800;
+	color: #795548;
+	margin-top:60px;
+}
+
+.loc-table td, tr {
+	padding: 20px;
 }

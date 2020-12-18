@@ -1,5 +1,5 @@
-<%@ page contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
  
 <html>
 <head>
@@ -11,14 +11,21 @@
 </head>
 <body>
     <header>
-        <nav class="header-list">
-            <ul>
-                <li onclick="location.href='about.jsp'">레스토랑 소개</li>
-				<li><img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" /></li>
+       <div class="logo">
+			<img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" />
+		</div>
+		<nav class="header-list">
+			<ul>
+				<li onclick="location.href='about.jsp'">레스토랑 소개</li>
 				<li onclick="location.href='gallery.jsp'">갤러리</li>
-            </ul>
-        </nav>
+				<li onclick="location.href='location.jsp'">찾아오시는 길 </li>
+			</ul>
+		</nav>
     </header>
+    <div class ="note" >
+        이미 예약하신 경우예는 예약확인을 해주세요<br>
+        중복 예약은 불가능합니다.
+        </div>
      <form name ="bookingForm" method ="post" action="bookingCheck.jsp">
      <div class = "booktbl-div">
         <table class="booktbl">
@@ -62,7 +69,10 @@
             	<button type="submit" class = "book-done">예약완료</button>
             </tr>
         </table>
+        
+        
         </div>
+        
          </form>
   
 <footer>

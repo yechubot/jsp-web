@@ -14,11 +14,14 @@
 </head>
 <body>
 	<header>
+		<div class="logo">
+			<img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" />
+		</div>
 		<nav class="header-list">
 			<ul>
 				<li onclick="location.href='about.jsp'">레스토랑 소개</li>
-				<li><img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" /></li>
 				<li onclick="location.href='gallery.jsp'">갤러리</li>
+				<li onclick="location.href='location.jsp'">찾아오시는 길 </li>
 			</ul>
 		</nav>
 	</header>
@@ -27,7 +30,7 @@
 		<table class="booktbl">
 
 			<tr>
-				<td><%=name%> 고객님의 예약 날짜는</td>
+				<td><%=name%> 고객님의 예약일은</td>
 
 			</tr>
 

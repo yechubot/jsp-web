@@ -7,22 +7,24 @@
 <link rel="stylesheet" type="text/css" href="main.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
-<title>Peter's Luger홈페이지에 오신것을 환영합니다.</title>
+<title>Peter's Luger 홈페이지에 오신것을 환영합니다.</title>
 </head>
 
 <body>
 	<header>
+		<div class="logo">
+			<img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" />
+		</div>
 		<nav class="header-list">
 			<ul>
 				<li onclick="location.href='about.jsp'">레스토랑 소개</li>
-				<li><img src="img/peter-luger-logo.png" alt="Peter Luger's steakhouse" onclick="location.href='main.jsp'" /></li>
 				<li onclick="location.href='gallery.jsp'">갤러리</li>
+				<li onclick="location.href='location.jsp'">찾아오시는 길</li>
 			</ul>
 		</nav>
 	</header>
-
 	<div class="main">
-		<img src="img/steak.jpg" alt="" srcset=""class="main-img" />
+		<img src="img/steak.jpg" alt="" srcset="" class="main-img" />
 	</div>
 	<div class="book">
 		<div class="call">
@@ -39,6 +41,11 @@
 
 		</div>
 	</div>
+	<div class ="btn-div">
+		<button class="go" onclick="location.href='https://peterluger.com/'">go to English page!</button>
+
+	</div>
+
 
 	<footer>
 		<div class="ny">
