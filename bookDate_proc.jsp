@@ -3,15 +3,15 @@
 <%
     String name = "";
 	String phone = "";
-	String date ="";
+	String result ="";
 	if(request.getParameter("name") != null)  
 	   name  = request.getParameter("name");
 	if(request.getParameter("phone") != null) 
 		phone  = request.getParameter("phone");
-	  	date = bookMgr.getBooking(name, phone);
-	if(date!=""){
+	result = bookMgr.getBooking(name, phone);
+	if(result!=""){
 		session.setAttribute("nKey",name);
-		session.setAttribute("dKey", date);
+		session.setAttribute("dKey", result);
 %>
 	<script> 
 	  alert("예약을 찾았습니다. 확인 페이지로 이동합니다.");

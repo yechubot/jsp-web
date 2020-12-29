@@ -2,7 +2,7 @@
 
 <%
 	String name = (String) session.getAttribute("nKey");
-	String date = (String) session.getAttribute("dKey");
+	String result = (String) session.getAttribute("dKey");
 %>
 
 <html>
@@ -35,7 +35,7 @@
 			</tr>
 
 			<tr>
-				<td><%=date%>입니다.</td>
+				<td><%=result%>입니다.</td>
 
 			</tr>
 			<tr>

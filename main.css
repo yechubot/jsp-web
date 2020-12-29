@@ -11,22 +11,25 @@
 	justify-content: right;
 	align-items: baseline;
 }
-.go{
-	padding:10px;
-	margin:5px;
+
+.go {
+	padding: 10px;
+	margin: 5px;
 	background-color: rgba(214, 214, 214, 0.2);
 	border: none;
-	cursor:pointer;
-	color:#795548;
-	font-size:15px;
+	cursor: pointer;
+	color: #795548;
+	font-size: 15px;
 	outline: none;
 }
-.go:hover{
-	color:white;
+
+.go:hover {
+	color: white;
 }
-.btn-div{
+
+.btn-div {
 	background-color: #ffe0b2;
-	text-align:center;
+	text-align: center;
 }
 
 .logo {
@@ -84,8 +87,9 @@
 	border: none;
 	font-size: 20px;
 	font-weight: 800;
-	padding: 15px 40px;
-	margin: 20px;
+	padding: 10px;
+	width: 250px;
+	margin: 25px;
 	text-align: center;
 }
 
@@ -129,13 +133,14 @@ footer {
 }
 
 /*book.jsp */
-.note{
-	width:330px;
-	padding:10px;
-	text-align:center;
-	margin:40px auto 10px auto;
-	border:2px dashed #eeeeee;
+.note {
+	width: 330px;
+	padding: 10px;
+	text-align: center;
+	margin: 40px auto 10px auto;
+	border: 2px dashed #eeeeee;
 }
+
 .booktbl-div {
 	height: 600px;
 	justify-content: center;
@@ -151,7 +156,7 @@ footer {
 
 .booktbl {
 	justify-content: center;
-	height: 300px;
+	height: 400px;
 	display: flex;
 	padding-top: 30px;
 	width: 500px;
@@ -184,7 +189,7 @@ input {
 }
 /*book_check*/
 .bookctbl-div {
-	margin-top:40px;
+	margin-top: 40px;
 	height: 600px;
 	justify-content: center;
 	padding-top: 80px;
@@ -198,7 +203,6 @@ input {
 }
 /*about */
 .title {
-	
 	margin-top: 50px;
 	text-align: center;
 	margin-bottom: 50px;
@@ -215,7 +219,7 @@ input {
 
 .abouti {
 	width: 40%;
-	margin:40px auto;
+	margin: 40px auto;
 	display: block;
 	display: block;
 }
@@ -237,20 +241,15 @@ input {
 	cursor: pointer;
 }
 /*location */
-.location-div {
-	
-}
-
 .loc-title {
-	margin-top:40px;
+	margin-top: 40px;
 	text-align: center;
 	font-size: 25px;
 	font-weight: 800;
 	color: #795548;
 }
 
-.loc-title>span,
-.loc-time>span {
+.loc-title>span, .loc-time>span {
 	border-bottom: 2px solid #795548;
 }
 
@@ -263,15 +262,15 @@ input {
 	background-color: rgba(214, 214, 214, 0.32);
 	font-size: 19px;
 }
-.line{
+
+.line {
 	height: 20px;
 	border-bottom: 3px dashed rgba(214, 214, 214, 0.32);
-	margin: auto 20px; 
+	margin: auto 20px;
+}
 
-	}
-	
-.bottom{
-	margin:20px;
+.bottom {
+	margin: 20px;
 }
 
 .loc-table {
@@ -287,9 +286,112 @@ input {
 	font-size: 25px;
 	font-weight: 800;
 	color: #795548;
-	margin-top:60px;
+	margin-top: 60px;
 }
 
 .loc-table td, tr {
 	padding: 20px;
 }
+
+/*writeReview.jsp */
+.tbl-review {
+	margin: 70px auto;
+	padding: 20px;
+	width: auto;
+	font-size: 20px;
+	background-color: rgba(214, 214, 214, 0.32);
+}
+
+.tbl-review td, tr {
+	padding: 15px;
+}
+
+.tbl-review input {
+	width: 400px;
+	height: 40px;
+	padding: 5px;
+}
+
+.td-btn {
+	text-align: center;
+}
+
+.done {
+	padding: 10px;
+	border: 1px solid #dedede;
+	background-color: #dedede;
+	color: #a1887f;
+	font-size: 20px;
+	width: 150px;
+}
+
+.done:hover {
+	cursor: pointer;
+	color: #a1887f;
+}
+
+.txtarea {
+	resize: none;
+	width: 400px;
+	height: 300px;
+	padding: 5px;
+}
+/*review.jsp */
+.rv-title {
+	margin: 40px auto;
+	color: #a1887f;
+	text-align : center;
+	font-size: 1.7em;
+	text-align: center;
+}
+
+.rv-tbl {
+	margin:80px auto;
+	text-align: center;
+	
+	width: 800px;
+	border-collapse: collapse;
+}
+
+.rv-tbl td, tr {
+	border: 2px dashed gray;
+	padding: 5px;
+}
+
+.btns-div {
+	text-align: center;
+	margin-bottom:40px;
+}
+
+.btns-div button{
+	padding: 10px 15px;
+	margin:15px 30px;
+	font-size:1.2em;
+	background-color:lightyellow;
+	border:1px dashed gray;
+	border-radius:0.5em;
+	outline:none;
+	cursor:pointer;
+	
+}
+
+.row0 {
+	background-color: #fff8e1;
+}
+
+.go-write {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 60px;
+	color: gray;
+	
+}
+
+.go-write:hover {
+	color: brown;
+	color: #a1887f;
+	cursor: pointer;
+}
+
+/*seereview.jsp */
+

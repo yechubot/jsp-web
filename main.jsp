@@ -20,6 +20,7 @@
 				<li onclick="location.href='about.jsp'">레스토랑 소개</li>
 				<li onclick="location.href='gallery.jsp'">갤러리</li>
 				<li onclick="location.href='location.jsp'">찾아오시는 길</li>
+				<li onclick="location.href='review.jsp'">방문 후기</li>
 			</ul>
 		</nav>
 	</header>

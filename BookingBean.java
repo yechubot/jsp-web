@@ -5,7 +5,14 @@ public class BookingBean {
 		private String name;
 		private String phone;
 		private String date;
+		private String time;
 		
+		public String getTime() {
+			return time;
+		}
+		public void setTime(String time) {
+			this.time = time;
+		}
 		public String getName() {
 			return name;
 		}

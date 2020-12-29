@@ -13,6 +13,9 @@
     		request.getParameter("year")+"년"+" "+
     		request.getParameter("month")+"월"+" "+
     		request.getParameter("day")+"일"; 
+    String time = 
+    		request.getParameter("hr")+"시"+" "+
+    		request.getParameter("min")+"분";
     
     boolean phoneResult = mgr.checkPhone(phone);
     
@@ -23,7 +26,7 @@
 	    bean.setDate(date);
 	    bean.setName(name);
 	    bean.setPhone(phone);
-	    
+	    bean.setTime(time);
 	    msg= "예약에 실패했습니다.";
 	    location = "book.jsp";	
 	    
