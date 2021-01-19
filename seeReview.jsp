@@ -43,7 +43,7 @@
 	<div class="rv-title">
 		고객님들의 소중한 후기 
 	</div>
-<table class="tbl-review">
+<table class="tbl-reviewSee">
 			<tr>
 				<td>제목:</td>
 				<td><%=bean.getTitle() %></td>
@@ -63,7 +63,7 @@
 			<tr>
 				<td colspan="2" class="td-btn">
 				
-				<button onclick="location.href='review.jsp'">이전으로 돌아가기 </button>
+				<button onclick="location.href='review.jsp'" class ="btn-prev">이전으로 돌아가기 </button>
 					
 				</td>
 			</tr>

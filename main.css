@@ -348,24 +348,23 @@ input {
 .rv-tbl {
 	margin:80px auto;
 	text-align: center;
-	
 	width: 800px;
 	border-collapse: collapse;
 }
 
 .rv-tbl td, tr {
-	border: 2px dashed gray;
+	border: 2px solid rgba(214, 214, 214, 0.7);
 	padding: 5px;
 }
 
 .btns-div {
 	text-align: center;
-	margin-bottom:40px;
+	
 }
 
 .btns-div button{
 	padding: 10px 15px;
-	margin:15px 30px;
+	margin:150px 10px 40px;
 	font-size:1.2em;
 	background-color:lightyellow;
 	border:1px dashed gray;
@@ -388,10 +387,43 @@ input {
 }
 
 .go-write:hover {
-	color: brown;
+	
 	color: #a1887f;
 	cursor: pointer;
 }
 
 /*seereview.jsp */
 
+.tbl-reviewSee{
+	margin: 70px auto;
+	padding: 20px;
+	width: 600px;
+	font-size: 20px;
+	background-color: rgba(214, 214, 214, 0.32);
+	border: 1rem solid rgba(214, 214, 214, 0.7);
+	
+}
+.tbl-reviewSee td, tr{
+	padding:10px;
+	
+}
+.tbl-reviewSee td:nth-child(1){
+	width:100px;
+}
+.tbl-reviewSee td:nth-child(2){
+	background-color:#fff;
+}
+
+.btn-prev{
+	margin-top:40px;
+	font-size: 20px;
+	padding:10px 15px;
+	border-radius: 1rem;
+	border: 1px solid #795548;
+	background-color:#fff8e1;
+	color: #a1887f;
+}
+.btn-prev:hover{
+	color: #795548;
+	cursor: pointer;
+}

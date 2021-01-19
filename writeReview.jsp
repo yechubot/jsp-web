@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@page import ="steakhouse.ReviewBean" %>
+<%@ page contentType="text/html; charset=euc-kr"%>
+
 <html>
 
 <head>
@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="main.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
-<title>ë°©ë¬¸ í›„ê¸°</title>
+<title>¹æ¹® ÈÄ±â</title>
 </head>
 
 <body>
@@ -18,49 +18,49 @@
 		</div>
 		<nav class="header-list">
 			<ul>
-				<li onclick="location.href='about.jsp'">ë ˆìŠ¤í† ëž‘ ì†Œê°œ</li>
-				<li onclick="location.href='gallery.jsp'">ê°¤ëŸ¬ë¦¬</li>
-				<li onclick="location.href='location.jsp'">ì°¾ì•„ì˜¤ì‹œëŠ” ê¸¸</li>
-				<li onclick="location.href='review.jsp'">ë°©ë¬¸ í›„ê¸°</li>
+				<li onclick="location.href='about.jsp'">·¹½ºÅä¶û ¼Ò°³</li>
+				<li onclick="location.href='gallery.jsp'">°¶·¯¸®</li>
+				<li onclick="location.href='location.jsp'">Ã£¾Æ¿À½Ã´Â ±æ</li>
+				<li onclick="location.href='review.jsp'">¹æ¹® ÈÄ±â</li>
 			</ul>
 		</nav>
 	</header>
 	<form name="reviewForm" method="post" action="reviewCheck.jsp">
 		<table class="tbl-review">
 			<tr>
-				<td>ì œëª©:</td>
+				<td>Á¦¸ñ:</td>
 				<td><input type="text" name="title" required></td>
 			</tr>
 			<tr>
-				<td>ë‹‰ë„¤ìž„:</td>
+				<td>´Ð³×ÀÓ:</td>
 				<td><input type="text" name="nickname" required></td>
 			</tr>
 			<tr>
-				<td>ë‚ ì§œ :</td>
+				<td> ¹æ¹® ³¯Â¥ :</td>
 				<td><select name="year" required>
 						<option value="2020">2020
 						<option value="2021">2021
-				</select>ë…„ <select name="month" required>
+				</select>³â <select name="month" required>
 						<%
 							for (int i = 1; i <= 12; i++) {
 							out.println("<option value='" + i + "'>" + i);
 						}
 						%>
-				</select>ì›” <select name="day" required>
+				</select>¿ù <select name="day" required>
 						<%
 							for (int i = 1; i <= 31; i++) {
 							out.println("<option value='" + i + "'>" + i);
 						}
 						%>
-				</select>ì¼</td>
+				</select>ÀÏ</td>
 			</tr>
 			<tr>
-				<td>ë‚´ìš©:</td>
+				<td>³»¿ë:</td>
 				<td><textarea name="details" class="txtarea" maxlength="300" required></textarea></td>
 			</tr>
 			<tr>
 				<td colspan="2" class="td-btn">
-					<button type="submit" class="done">ì œì¶œ</button>
+					<button type="submit" class="done">Á¦Ãâ</button>
 				</td>
 			</tr>
 		</table>

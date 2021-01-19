@@ -1,39 +1,40 @@
-<%@ page contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=euc-kr"
+    pageEncoding="euc-kr"%>
     <jsp:useBean id="mgr" class = "steakhouse.BookingMgr"/>
     <jsp:useBean id="bean" class = "steakhouse.BookingBean"/>
     <jsp:setProperty property ="*" name ="bean"/>
    
     <%
     String msg, location;
-    String name =request.getParameter("name");
+    String name =new String(request.getParameter("name").getBytes("ISO-8859-1"),"euc-kr");
     String phone = request.getParameter("phone");
     
     String date = 
-    		request.getParameter("year")+"ë…„"+" "+
-    		request.getParameter("month")+"ì›”"+" "+
-    		request.getParameter("day")+"ì¼"; 
+    		request.getParameter("year")+"³â"+" "+
+    		request.getParameter("month")+"¿ù"+" "+
+    		request.getParameter("day")+"ÀÏ"; 
     String time = 
-    		request.getParameter("hr")+"ì‹œ"+" "+
-    		request.getParameter("min")+"ë¶„";
+    		request.getParameter("hr")+"½Ã"+" "+
+    		request.getParameter("min")+"ºÐ";
     
     boolean phoneResult = mgr.checkPhone(phone);
     
-    if(phoneResult){//ì¤‘ë³µ
-    	msg= "ì˜ˆì•½í•œ ë²ˆí˜¸ê°€ ì´ë¯¸ ì¡´ìž¬í•©ë‹ˆë‹¤.ì¤‘ë³µ ì˜ˆì•½ì€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.";
+    if(phoneResult){//Áßº¹
+    	msg= "¿¹¾àÇÑ ¹øÈ£°¡ ÀÌ¹Ì Á¸ÀçÇÕ´Ï´Ù.Áßº¹ ¿¹¾àÀº ºÒ°¡´ÉÇÕ´Ï´Ù.";
         location = "book.jsp";
-    }else {//ì¤‘ë³µ ì•„ë‹˜ 
+    }else {//Áßº¹ ¾Æ´Ô 
 	    bean.setDate(date);
 	    bean.setName(name);
 	    bean.setPhone(phone);
 	    bean.setTime(time);
-	    msg= "ì˜ˆì•½ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.";
+	    
+	    msg= "¿¹¾à¿¡ ½ÇÆÐÇß½À´Ï´Ù.";
 	    location = "book.jsp";	
 	    
-	    //ì˜ˆì•½ ì¶”ê°€ 
+	    //¿¹¾à Ãß°¡ 
 	    boolean result = mgr.insertBooking(bean);
 	       if(result){
-	     	msg ="ì˜ˆì•½ë˜ì—ˆìŠµë‹ˆë‹¤.";
+	     	msg ="¿¹¾àµÇ¾ú½À´Ï´Ù.";
 	     	location = "main.jsp";	
 	     }	         
     }      

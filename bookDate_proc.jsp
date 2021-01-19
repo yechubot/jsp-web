@@ -1,11 +1,11 @@
-<%@ page contentType="text/html; charset=utf-8" %>
+<%@ page contentType="text/html; charset=euc-kr" pageEncoding="euc-kr" %>
 <jsp:useBean id="bookMgr" class="steakhouse.BookingMgr" />
 <%
     String name = "";
 	String phone = "";
 	String result ="";
 	if(request.getParameter("name") != null)  
-	   name  = request.getParameter("name");
+	   name  = new String(request.getParameter("name").getBytes("ISO-8859-1"),"euc-kr");
 	if(request.getParameter("phone") != null) 
 		phone  = request.getParameter("phone");
 	result = bookMgr.getBooking(name, phone);
@@ -14,12 +14,12 @@
 		session.setAttribute("dKey", result);
 %>
 	<script> 
-	  alert("ì˜ˆì•½ì„ ì°¾ì•˜ìŠµë‹ˆë‹¤. í™•ì¸ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.");
+	  alert("¿¹¾àÀ» Ã£¾Ò½À´Ï´Ù. È®ÀÎ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.");
       location.href="bookDate_check.jsp";
 	</script>
 <%	}else{ %>
 	<script>
-	alert("ì˜ˆì•½ëœ ë‚´ì—­ì´ ì—†ìŠµë‹ˆë‹¤. ì˜ˆì•½íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤.");
+	alert("¿¹¾àµÈ ³»¿ªÀÌ ¾ø½À´Ï´Ù. ¿¹¾àÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù.");
 	location.href = "book.jsp";
 	</script>
 <%}%>

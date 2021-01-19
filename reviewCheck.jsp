@@ -1,29 +1,29 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="euc-kr"%>
 <jsp:useBean id="mgr" class="steakhouse.ReviewMgr" />
 <jsp:useBean id="bean" class="steakhouse.ReviewBean" />
 <jsp:setProperty property="*" name="bean" />
 <%
 	String title, nickname, visitDate, details, msg, loc;
 
-	title = request.getParameter("title");
-	nickname = request.getParameter("nickname");
-	details = request.getParameter("details");
-	visitDate = request.getParameter("year") + "ë…„" + " " + request.getParameter("month") + "ì›”" + " "
-			+ request.getParameter("day") + "ì¼";
+	title = new String(request.getParameter("title").getBytes("ISO-8859-1"),"euc-kr");
+	nickname = new String(request.getParameter("nickname").getBytes("ISO-8859-1"),"euc-kr");
+	details = new String(request.getParameter("details").getBytes("ISO-8859-1"),"euc-kr");
+	visitDate = request.getParameter("year") + "³â" + " " + request.getParameter("month") + "¿ù" + " "
+			+ request.getParameter("day") + "ÀÏ";
 	bean.setTitle(title);
 	bean.setNickname(nickname);
 	bean.setVisitDate(visitDate);
 	bean.setDetails(details);
 	
 	boolean result = mgr.insertReview(bean);
-	//set í•˜ê¸° ì „ì— ì¨ì„œ date null ë‚˜ì™”ì—ˆìŒ...
-	//set ì•ˆí•´ë„ íƒ€ì´í‹€, ë‹‰ë„¤ìž„, ë””í…Œì¼ ì–´ë–»ê²Œ ë‚˜ì™”ì§€..
+	//set ÇÏ±â Àü¿¡ ½á¼­ date null ³ª¿Ô¾úÀ½...
+	//set ¾ÈÇØµµ Å¸ÀÌÆ², ´Ð³×ÀÓ, µðÅ×ÀÏ ¾î¶»°Ô ³ª¿ÔÁö..
 	if(result){
-		msg ="í›„ê¸°ê°€ ë“±ë¡ë˜ì—ˆìŠµë‹ˆë‹¤.";
+		msg ="ÈÄ±â°¡ µî·ÏµÇ¾ú½À´Ï´Ù.";
 		loc ="review.jsp";
 		
 	}else {
-		msg ="í›„ê¸° ë“±ë¡ì— ì‹¤íŒ¨í–ˆìŠµë‹ˆë‹¤.";
+		msg ="ÈÄ±â µî·Ï¿¡ ½ÇÆÐÇß½À´Ï´Ù.";
 		loc ="main.jsp";
 	}
 %>

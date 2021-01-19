@@ -1,12 +1,12 @@
-<%@ page contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page contentType="text/html; charset=EUC-KR"
+    pageEncoding="euc-kr"%>
  
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="main.css" />
    <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
-<title>ì˜ˆì•½í™•ì¸</title>  
+<title>¿¹¾àÈ®ÀÎ</title>  
 
 </head>
 <body>
@@ -16,9 +16,10 @@
 		</div>
 		<nav class="header-list">
 			<ul>
-				<li onclick="location.href='about.jsp'">ë ˆìŠ¤í† ëž‘ ì†Œê°œ</li>
-				<li onclick="location.href='gallery.jsp'">ê°¤ëŸ¬ë¦¬</li>
-				<li onclick="location.href='location.jsp'">ì°¾ì•„ì˜¤ì‹œëŠ” ê¸¸ </li>
+				<li onclick="location.href='about.jsp'">·¹½ºÅä¶û ¼Ò°³</li>
+				<li onclick="location.href='gallery.jsp'">°¶·¯¸®</li>
+				<li onclick="location.href='location.jsp'">Ã£¾Æ¿À½Ã´Â ±æ </li>
+				<li onclick="location.href='review.jsp'">¹æ¹® ÈÄ±â</li>
 			</ul>
 		</nav>
     </header>
@@ -27,11 +28,11 @@
         <table class="booktbl">
         
          <tr>
-                <td>ì˜ˆì•½í•˜ì‹  ì„±í•¨: </td>
-                <td><input type="text" name="name" required placeholder="ì˜ˆì•½í•˜ì‹  ì„±í•¨ì„ ìž…ë ¥í•˜ì„¸ìš”."></td>
+                <td>¿¹¾àÇÏ½Å ¼ºÇÔ: </td>
+                <td><input type="text" name="name" required placeholder="¿¹¾àÇÏ½Å ¼ºÇÔÀ» ÀÔ·ÂÇÏ¼¼¿ä."></td>
             </tr>
             <tr>
-                <td>ì˜ˆì•½í•˜ì‹  ì „í™”ë²ˆí˜¸: </td>
+                <td>¿¹¾àÇÏ½Å ÀüÈ­¹øÈ£: </td>
                 <td><input type="text" name="phone" required 
                 placeholder="010-0000-0000"
                 pattern ="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}"
@@ -39,7 +40,7 @@
             </tr>
             <tr>
             	<td colspan="2" align ="center">
-            	<button type="submit" class = "book-done">ì˜ˆì•½ì¼ í™•ì¸í•˜ê¸°</button>
+            	<button type="submit" class = "book-done">¿¹¾àÀÏ È®ÀÎÇÏ±â</button>
             </tr>
         </table>
         </div>

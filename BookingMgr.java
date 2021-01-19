@@ -16,7 +16,7 @@ public class BookingMgr {
 		}
 	}
 
-	// 예약하기
+	// 예약 추가 
 	public boolean insertBooking(BookingBean bean) {
 		Connection connection = null;
 		PreparedStatement statement = null;
@@ -42,7 +42,7 @@ public class BookingMgr {
 		}
 		return flag;
 	}
-	// 예약확인
+	// 예약 가져와 
 
 	public String getBooking(String name, String phone) {
 		Connection connection = null;
@@ -70,7 +70,7 @@ public class BookingMgr {
 		return date + ", "+time;
 	}
 
-	// 번호 중복확인
+	// 중복 확인
 	public boolean checkPhone(String phone) {
 		Connection connection = null;
 		PreparedStatement statement = null;
@@ -80,7 +80,7 @@ public class BookingMgr {
 			String sql = "select phone from bookingtbl where phone =? ";
 			statement = connection.prepareStatement(sql);
 			statement.setString(1, phone);
-			flag = statement.executeQuery().next();// 중복 => true
+			flag = statement.executeQuery().next();//중복 => true
 
 		} catch (Exception e) {
 			e.printStackTrace();

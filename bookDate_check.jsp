@@ -1,8 +1,11 @@
-<%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page contentType="text/html; charset=euc-kr" pageEncoding="euc-kr"%>
 
 <%
+
 	String name = (String) session.getAttribute("nKey");
+
 	String result = (String) session.getAttribute("dKey");
+	
 %>
 
 <html>
@@ -10,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="main.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
-<title>ì˜ˆì•½í™•ì¸</title>
+<title>¿¹¾àÈ®ÀÎ</title>
 </head>
 <body>
 	<header>
@@ -19,9 +22,10 @@
 		</div>
 		<nav class="header-list">
 			<ul>
-				<li onclick="location.href='about.jsp'">ë ˆìŠ¤í† ëž‘ ì†Œê°œ</li>
-				<li onclick="location.href='gallery.jsp'">ê°¤ëŸ¬ë¦¬</li>
-				<li onclick="location.href='location.jsp'">ì°¾ì•„ì˜¤ì‹œëŠ” ê¸¸ </li>
+				<li onclick="location.href='about.jsp'">·¹½ºÅä¶û ¼Ò°³</li>
+				<li onclick="location.href='gallery.jsp'">°¶·¯¸®</li>
+				<li onclick="location.href='location.jsp'">Ã£¾Æ¿À½Ã´Â ±æ </li>
+				<li onclick="location.href='review.jsp'">¹æ¹® ÈÄ±â</li>
 			</ul>
 		</nav>
 	</header>
@@ -30,16 +34,16 @@
 		<table class="booktbl">
 
 			<tr>
-				<td><%=name%> ê³ ê°ë‹˜ì˜ ì˜ˆì•½ì¼ì€</td>
+				<td><%=name%> °í°´´ÔÀÇ ¿¹¾àÀÏÀº</td>
 
 			</tr>
 
 			<tr>
-				<td><%=result%>ìž…ë‹ˆë‹¤.</td>
+				<td><%=result%>ÀÔ´Ï´Ù.</td>
 
 			</tr>
 			<tr>
-				<td><button class="btn_check" type="submit" onclick="location.href='main.jsp'">í™ˆìœ¼ë¡œ ëŒì•„ê°€ê¸°</button></td>
+				<td><button class="btn_check" type="submit" onclick="location.href='main.jsp'">È¨À¸·Î µ¹¾Æ°¡±â</button></td>
 			</tr>
 		</table>
 	</div>

@@ -1,11 +1,11 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html; charset=euc-kr" pageEncoding="euc-kr"%>
 
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="main.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
-<title>ì˜ˆì•½í•˜ê¸°</title>
+<title>¿¹¾àÇÏ±â</title>
 
 </head>
 <body>
@@ -15,63 +15,64 @@
 		</div>
 		<nav class="header-list">
 			<ul>
-				<li onclick="location.href='about.jsp'">ë ˆìŠ¤í† ëž‘ ì†Œê°œ</li>
-				<li onclick="location.href='gallery.jsp'">ê°¤ëŸ¬ë¦¬</li>
-				<li onclick="location.href='location.jsp'">ì°¾ì•„ì˜¤ì‹œëŠ” ê¸¸</li>
+				<li onclick="location.href='about.jsp'">·¹½ºÅä¶û ¼Ò°³</li>
+				<li onclick="location.href='gallery.jsp'">°¶·¯¸®</li>
+				<li onclick="location.href='location.jsp'">Ã£¾Æ¿À½Ã´Â ±æ</li>
+				<li onclick="location.href='review.jsp'">¹æ¹® ÈÄ±â</li>
 			</ul>
 		</nav>
 	</header>
 	<div class="note">
-		ì´ë¯¸ ì˜ˆì•½í•˜ì‹  ê²½ìš°ì˜ˆëŠ” ì˜ˆì•½í™•ì¸ì„ í•´ì£¼ì„¸ìš”<br> ì¤‘ë³µ ì˜ˆì•½ì€ ë¶ˆê°€ëŠ¥í•©ë‹ˆë‹¤.
+		ÀÌ¹Ì ¿¹¾àÇÏ½Å °æ¿ì¿¹´Â ¿¹¾àÈ®ÀÎÀ» ÇØÁÖ¼¼¿ä<br> Áßº¹ ¿¹¾àÀº ºÒ°¡´ÉÇÕ´Ï´Ù.
 	</div>
 	<form name="bookingForm" method="post" action="bookingCheck.jsp">
 		<div class="booktbl-div">
 			<table class="booktbl">
 
 				<tr>
-					<td>ì´ë¦„:</td>
-					<td><input type="text" name="name" required placeholder="ê·€í•˜ì˜ ì„±í•¨ì„ ìž…ë ¥í•˜ì„¸ìš”. "></td>
+					<td>ÀÌ¸§:</td>
+					<td><input type="text" name="name" required placeholder="±ÍÇÏÀÇ ¼ºÇÔÀ» ÀÔ·ÂÇÏ¼¼¿ä. "></td>
 				</tr>
 				<tr>
-					<td>ì „í™”ë²ˆí˜¸:</td>
+					<td>ÀüÈ­¹øÈ£:</td>
 					<td><input type="text" name="phone" required placeholder="010-0000-0000" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}" maxlength="14"></td>
 				</tr>
 				<tr>
-					<td>ë‚ ì§œ :</td>
+					<td>³¯Â¥ :</td>
 					<td><select name="year" required>
 							<option value="2020">2020
 							<option value="2021">2021
-					</select>ë…„ <select name="month" required>
+					</select>³â <select name="month" required>
 							<%
 								for (int i = 1; i <= 12; i++) {
 								out.println("<option value='" + i + "'>" + i);
 							}
 							%>
-					</select>ì›” <select name="day" required>
+					</select>¿ù <select name="day" required>
 							<%
 								for (int i = 1; i <= 31; i++) {
 								out.println("<option value='" + i + "'>" + i);
 							}
 							%>
-					</select>ì¼</td>
+					</select>ÀÏ</td>
 				</tr>
 				<tr>
-					<td>ì‹œê°„:</td>
+					<td>½Ã°£:</td>
 					<td><select name="hr" required>
 							<%
 								for (int i = 10; i <= 21; i++) {
 								out.println("<option value='" + i + "'>" + i);
 							}
 							%>
-					</select>ì‹œ <select name="min" required>
+					</select>½Ã <select name="min" required>
 							<option value="00">00
 							<option value="15">15
 							<option value="30">30
 							<option value="15">50
-					</select>ë¶„</td>
+					</select>ºÐ</td>
 				<tr>
 					<td colspan="2" align="center">
-						<button type="submit" class="book-done">ì˜ˆì•½ì™„ë£Œ</button>
+						<button type="submit" class="book-done">¿¹¾à¿Ï·á</button>
 				</tr>
 			</table>
 

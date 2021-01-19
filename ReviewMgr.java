@@ -19,24 +19,21 @@ public class ReviewMgr {
 		}
 	}
 
-	// 후기 추가
+	// 리뷰 추가 
 	public boolean insertReview(ReviewBean bean) {
 		PreparedStatement pstmt = null;
-		String sql = "insert reviewtbl(title,nickname,visitDate,details) values(?,?,?,?)";
 		boolean flag = false;
 		try {
 			conn = pool.getConnection();
+			String sql = "insert reviewtbl(title,nickname,visitDate,details) values(?,?,?,?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, bean.getTitle());
 			pstmt.setString(2, bean.getNickname());
 			pstmt.setString(3, bean.getVisitDate());
 			pstmt.setString(4, bean.getDetails());
+			
 			if (pstmt.executeUpdate() == 1)
 				flag = true;
-			if(bean.getVisitDate().equals("null")|| bean.getVisitDate().equals("")) {
-				pstmt.setString(3, "날짜가 왜 안뜨니");
-			}
-			
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -47,7 +44,7 @@ public class ReviewMgr {
 		return flag;
 	}
 	
-	//하나씩 ?
+	//하나씩 
 	public ReviewBean getEach(int num) {
 		ReviewBean rvBean = new ReviewBean();
 		PreparedStatement pstmt = null;
@@ -72,7 +69,7 @@ public class ReviewMgr {
 	}
 	
 	
-	//후기 리스트
+	//리스트 모두 가져오기 
 	public Vector<ReviewBean> getList(){
 		PreparedStatement pstmt = null;
 		Vector<ReviewBean> vlist = new Vector<ReviewBean>();

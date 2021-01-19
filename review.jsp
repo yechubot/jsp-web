@@ -2,7 +2,13 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"%>
 <%@page import="java.util.Vector"%>
 <jsp:useBean id="mgr" class="steakhouse.ReviewMgr" />
+<%
+	int onePage = 10;
 
+//db시작
+int start = 0;
+int end = 10;
+%>
 <html>
 
 <head>
@@ -29,22 +35,26 @@
 		</nav>
 	</header>
 	<div class="rv-title">고객님들의 소중한 후기</div>
-
-
 	<table class="rv-tbl">
-		<tr class="row0">
-			<td width="50px">번호</td>
-			<td>제목</td>
-			<td width="100px">방문일</td>
-			<td width="130px">닉네임</td>
-		</tr>
 		<%
 			Vector<ReviewBean> vlist = mgr.getList();
 		int count = vlist.size();
 
-		for (int i = 0; i < vlist.size(); i++) {
+		if (vlist.isEmpty()) {
+			String msg = "등록된 후기가 없습니다";
+			out.println("<tr><td colspan='3'>" + msg + "</td></tr>");
+		} else {
+		%>
+		<tr class="row0">
+			<td width="80px">글 번호</td>
+			<td width="370px">제목</td>
+			<td>방문일</td>
+			<td width="130px">닉네임</td>
+		</tr>
+		<%
+			for (int i = 0; i < vlist.size(); i++) {
 			ReviewBean rbean = vlist.get(i);
-			//int num = rbean.getNum();
+
 			String title = rbean.getTitle();
 			String visitDate = rbean.getVisitDate();
 			String nickname = rbean.getNickname();
@@ -54,6 +64,7 @@
 			out.println("<td>" + visitDate + "</td>");
 			out.println("<td>" + nickname + "</td></tr>");
 			count = count - 1; //1개씩 세니까 줄어드는 건가
+		}
 		}
 		%>
 
